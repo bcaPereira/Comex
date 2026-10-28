@@ -85,6 +85,12 @@ internal partial class Program
                 Espera();
                 Console.Clear();
                 break;
+            case 9:
+                Console.Clear();
+                CarregarDadosAsync().Wait();
+                Espera();
+                Console.Clear();
+                break;
             case -1:
                 Console.Clear();
                 ExibirCabecalhoTela("Encerrando sistema");

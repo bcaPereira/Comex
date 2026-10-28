@@ -14,7 +14,7 @@ internal partial class Program
         {
             Console.Write("Escolha uma opção: ");
             string? entrada = Console.ReadLine();
-            if (int.TryParse(entrada, out int opcao) && (opcao == -1 || (opcao >= 1 && opcao <= 8)))
+            if (int.TryParse(entrada, out int opcao) && (opcao == -1 || (opcao >= 1 && opcao <= 9)))
             {
                 return opcao;
             }
@@ -39,6 +39,7 @@ internal partial class Program
         Console.WriteLine("║  6  | Adicionar produto no carrinho                 ║");
         Console.WriteLine("║  7  | Listar carrinho                               ║");
         Console.WriteLine("║  8  | Fechar compra                                 ║");
+        Console.WriteLine("║  9  | CARREGAR DA API                               ║");
         Console.WriteLine("║ -1  | Sair                                          ║");
 
         Console.ForegroundColor = ConsoleColor.Cyan;
